@@ -1,0 +1,27 @@
+028dac84-ab62-4d67-8222-2674ffd94c32.wav - three - one
+7ba62ab2-3731-40ad-97d1-465cdc424fc1.wav - one - one
+8ecfb9b4-3bc5-4847-989f-8148f3bc32ff.wav - three - one
+9cff19ae-82bf-4724-93b2-8c3c517116bb.wav - one - one
+5fda692c-5c07-4771-a471-a7c5cf974f29.wav - one - one
+9aa7ac62-88e3-405d-a816-35943656bf2a.wav - three - one
+5d05f2ba-ba1b-4697-beba-8fc3fd64c136.wav - one - one
+08c9696f-6074-4b58-baa4-013383905dd2.wav - three - one
+9d7d47b8-ae50-4afa-b70a-3abaa10e8cac.wav - one - one
+7cee59f7-c779-458e-b624-6aa26ad2aaee.wav - one - one
+5d34c47d-3e41-4fe5-86e2-6e394c7739e1.wav - three - one
+8a24cb52-ee67-4977-878e-bad289cd89b4.wav - one - one
+08fb736c-bd13-4d58-94ee-d474bf6b07d8.wav - three - one
+7fbe2ce6-c7ef-40e7-a233-5096ddf3b261.wav - one - one
+8b7dc38b-8d9a-435c-8d45-ff44c75bf139.wav - one - one
+6ca5b636-295d-4edc-8d1d-5c1deacde8d6.wav - three - one
+8dce6e4b-dff2-4fe8-964c-520d909d6794.wav - one - one
+8be57bf0-b1be-414e-87f7-be4b3fc5716d.wav - three - one
+006e8725-6756-4485-a7be-174ce20c9c54.wav - one - one
+8c2a64fc-ba2a-4309-9cff-4f0f9c0935e9.wav - one - one
+830f6e35-26ae-4d8d-b63f-1de238ea7d1f.wav - three - one
+83eeabe0-4b7f-4e79-b2fe-c6e58df6fd1b.wav - one - one
+0383c725-7ecb-4ab7-848e-b1350bbaf1e2.wav - three - one
+85bfb0d6-b35a-4a86-a18c-ec77b866d5cd.wav - one - one
+83afde26-e408-4bb1-90a0-b760d1236445.wav - one - one
+Euclidean accuracy: 0.6
+DTW accuracy: 1.0

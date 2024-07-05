@@ -48,7 +48,7 @@ def extract_features(f_path, feature):
         return librosa.feature.mfcc(y=y, sr=sr).flatten()
     elif feature == 'nmfcc':
         mfcc = librosa.feature.mfcc(y=y, sr=sr).flatten()
-        return (mfcc - np.mean(mfcc)) / np.std(mfcc)
+        return (mfcc - np.mean(mfcc))/np.std(mfcc)
     return None
 
 def prepare_data(labels, feature, train=True):
@@ -72,18 +72,20 @@ def generate_output_file(feature, labels):
     output_lines = []
     correct_euclidean = 0
     correct_dtw = 0
+
+    pred_index = 0
     for label in labels:
-       for i, (f_path, true_label) in enumerate(zip(load_data(label, train=False), test_label)):
-    # for i, (f_path, true_label) in enumerate(zip(load_data(labels, train=False), test_label)):
+       for i, f_path in enumerate(load_data(label, train=False)):
             file_name = os.path.basename(f_path)
-            pred_euclidean = euclidean_predictions[i]
-            pred_dtw = dtw_predictions[i]
+            pred_euclidean = euclidean_predictions[pred_index]
+            pred_dtw = dtw_predictions[pred_index]
             output_lines.append(f"{file_name} - {pred_euclidean} - {pred_dtw}")
             print(f"{file_name} - {pred_euclidean} - {pred_dtw}")
-            if pred_euclidean == true_label:
+            if pred_euclidean == label:
                 correct_euclidean += 1
-            if pred_dtw == true_label:
+            if pred_dtw == label:
                 correct_dtw += 1
+            pred_index += 1
 
     accuracy_euclidean = correct_euclidean / len(test_label)
     accuracy_dtw = correct_dtw / len(test_label)
@@ -97,7 +99,7 @@ def generate_output_file(feature, labels):
         f.write('\n'.join(output_lines))
 
 def q1(labels):
-    features = ['raw', 'mfcc', 'mel', 'nmfcc']
+    features = ['nmfcc', 'mfcc', 'mel', 'raw']
 
     for feature in features:
          generate_output_file(feature, labels)
